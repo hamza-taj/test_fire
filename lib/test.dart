@@ -9,7 +9,7 @@ class Test extends StatefulWidget {
 }
 
 class _TestState extends State<Test> {
-  UserCredential? usercredential;
+  // UserCredential? usercredential;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +25,7 @@ class _TestState extends State<Test> {
                     try {
                       final credential = await FirebaseAuth.instance
                           .createUserWithEmailAndPassword(
-                        email: 'hamza@gmail.com',
+                        email: 'hamza98@gmail.com',
                         password: '12344yt5665',
                       );
                     } on FirebaseAuthException catch (e) {
